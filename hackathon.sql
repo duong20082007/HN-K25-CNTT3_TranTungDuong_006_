@@ -92,7 +92,7 @@ ALTER COLUMN status SET DEFAULT 'Available';
 ALTER TABLE Properties
 ADD COLUMN rating INT;
 ALTER TABLE Properties
-ADD CONSTRAINT CHK_RatingRange CHECK (status BETWEEN 1 AND 5);
+ADD CONSTRAINT check_status CHECK (rating BETWEEN 1 AND 5);
 
 -- PHẦN 2: Truy vấn dữ liệu cơ bản
 -- 10
